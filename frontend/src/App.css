@@ -1,0 +1,63 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; 
+  }
+  
+  .form {
+    width: 200px; 
+    margin: 10px 0; 
+    text-align: center;
+  }
+
+  table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+  }
+  
+  th, td {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #dee2e6;
+    font-size: 1rem;
+  }
+  
+  th {
+    background-color: #669bbc;
+    color: white;
+    font-weight: bold;
+  }
+  
+  td {
+    font-family: 'Arial', sans-serif;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+  /* Estilos para el color de las celdas */
+  td[style*="background-color: blue"] {
+    color: white;
+  }
+  
+  td[style*="background-color: green"] {
+    color: white;
+  }
+  
+  td[style*="background-color: red"] {
+    color: white;
+  }
+  
+  td[style*="background-color: yellow"] {
+    color: black;
+  }
+ 
