@@ -2,6 +2,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    font-family: 'Arial', sans-serif;
 }
 
 .form-container {
@@ -34,10 +35,6 @@ body{
     background-color: #669bbc;
     color: white;
     font-weight: bold;
-  }
-  
-  td {
-    font-family: 'Arial', sans-serif;
   }
   
   tr:nth-child(even) {

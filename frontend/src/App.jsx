@@ -32,7 +32,6 @@ const App = () => {
       const nuevaTabla = response.data;
       setResultados(nuevaTabla);
 
-      // Guardar los resultados en Firestore
       await guardarTablaEnFirestore(nuevaTabla);
 
     } catch (error) {
@@ -42,10 +41,11 @@ const App = () => {
 
   const guardarTablaEnFirestore = async (tabla) => {
     try {
-      const docRef = await addDoc(collection(db, "tablasMultiplicar"), {
+      await addDoc(collection(db, "tablasMultiplicar"), {
         tabla: tabla,
         fecha: new Date(),
       });
+      console.log("Tabla guardada en Firestore");
     } catch (e) {
       console.error("Error añadiendo el documento: ", e);
     }
