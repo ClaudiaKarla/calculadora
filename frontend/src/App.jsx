@@ -57,6 +57,7 @@ const App = () => {
       <p>Azul: si el número es múltiplo de 3</p>
       <p>Verde: si el número es múltiplo de 5</p>
       <p>Rojo: si el número es múltiplo de 7</p>
+      <p>Amarillo: si el número no es ningún múltiplo de 3, 5 y 7</p>
       <p>Si el número es múltiplo de varios de estos, el color será el del múltiplo mayor</p>
     <div className="form-container">
       <h1 className="title">Tabla de Multiplicar</h1>
@@ -68,7 +69,6 @@ const App = () => {
         value={tabla}
         onChange={(e) => setTabla(e.target.value)}
       />
-      <h3 className="form">*</h3>
       <Form.Control
         className="form"
         type="number"
